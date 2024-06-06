@@ -1,1 +1,47 @@
-// hii 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">This Survey is to know about your favorite programming language</p>
+  <form id="survey-form" action="#" method="post">
+    <fieldset id="Personal-Info">   
+      <label id="name-label" for="name">Name: <input id="name" name="name" type="text" required placeholder="Aditya Mewada" /></label>
+      <label id="email-label" for="email">Email: <input id="email" name="email" type="email" required placeholder="eng.adityamewada@gmail.com" /></label>
+      <label id="number-label" for="number">Number: <input id="number" name="number" type="number" min="0000000000" max="9999999999" placeholder="9865235645" /></label>
+    </fieldset>
+    <fieldset>
+      <label for="gender">Gender: </label>
+      <select id="dropdown" name="gender">
+        <option value="" disabled selected>Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <p>Your Favourite Programming Language: </p>
+      <label><input type="radio" name="language" value="Java" />Java</label>
+      <label><input type="radio" name="language" value="JavaScript" />JavaScript</label>
+      <label><input type="radio" name="language" value="Python" />Python</label>
+      <label><input type="radio" name="language" value="C/C++" />C/C++</label>
+    </fieldset> 
+    <fieldset>
+      <label><input type="checkbox" name="terms" value="accepted" />Accept Terms & Conditions.</label>
+      <label><input type="checkbox" name="privacy" value="accepted" />Accept Privacy Policy.</label>
+    </fieldset>
+    <fieldset>
+      <label for="bio">Bio: </label>
+      <textarea id="bio" name="bio"></textarea>
+    </fieldset>
+    <fieldset>
+      <button id="submit" type="submit">Submit</button>
+    </fieldset>
+  </form>
+</body>
+</html>
